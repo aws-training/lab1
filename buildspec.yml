@@ -10,6 +10,7 @@ phases:
         commands:
             - echo "we are in the pre build phase"
     build:
+        on-failure: ABORT
         commands:
             - echo "we are in the build block"
             - echo "we will run some tests"
